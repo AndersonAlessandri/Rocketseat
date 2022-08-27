@@ -1,0 +1,133 @@
+<!-- 
+    <form> 
+        
+    - Elementos que definirá um formulário
+    - É um container estilo <section> <footer>
+
+    Atributos básicos
+    - action
+    - method
+    
+-->
+
+<!-- <form action="" method="GET">
+    
+method GET
+    http://minhapagina.com.br/?name=Mayk&email=mayk@mayk.com 
+
+    POST (esconde dados)
+</form> -->
+
+<!-- 
+    <fieldset>
+    - agrupamento de campos
+    - mesmo propósito
+    - semântico
+    - acessibilidade
+    
+    Atributos especiais
+    - disabled
+        - desabilita todos os elementos internos
+        - não serão enviados ao submeter o formulário
+
+    form
+        - o id de um formulário ao qual esse fieldset pertence
+        - não precisa estar dentro do formulário
+
+    name 
+        - nome do grupo
+
+    <legend>
+        - nome do agrupamento
+        - primeiro elemento dentro do fieldset
+-->
+
+<!-- <form action="">
+    <fieldset>
+        <legend>Contato</legend>
+        <label for="">Nome</label>
+        <input type="text">
+    </fieldset>
+
+</form> -->
+
+<!-- 
+    <label>
+
+    - associar e identificar uma (ou mais) tags de entrada de dados 
+    - acessibilidade 
+    - você poderá clicar para mudar o foco da entrada de dados
+
+    Atributos
+    - for
+        - para fazer a conexão entre este label e a tag de entrada de dados
+        - é feita via id do input
+        - só funciona com elementos específicos
+            - button, input (not hidden), meter, output, progress. select, textarea
+
+            <label for="nome">Nome completo:</label>
+-->
+ 
+    
+<!-- 
+    <buttom>
+        
+        - representa um botão
+        - Usado para enviar formulários
+        -  É estilizado pelo user agent
+
+        Atributos comuns
+        - type
+            - submit
+            - reset
+            - buttom
+
+        - autofocus
+        - disabled
+        - name
+        - value
+        - form
+        
+-->
+<!-- <form action="">
+    <input type="text" value="">
+    <button type="reset">Limpar</button>
+
+</form> -->
+
+<!-- 
+    #<datalist>
+
+    - Lista de valores como sugestão a uma tag <input>
+    - valores sugestivos e não obrigatórios
+    - Usuários poderão selecionar um dos valores, ou colocar um valor diferente da sugestão
+
+    <datalist id="fruitsdata">
+        <option>apple</option>
+        <option>banana</option>
+        <option>manga</option>
+        <option>orange</option>
+        <option>cherry</option>
+    </datalist>
+
+    # List
+
+    - Recebe como valor o id de um <datalist> residente no mesmo documento.
+ -->
+ <input type="text" list="fruitsdata" placeholder="Escolha uma fruta">
+
+ <datalist id="fruitsdata">
+    <option>apple</option>
+    <option>banana</option>
+    <option>manga</option>
+    <option>orange</option>
+    <option>cherry</option>
+</datalist>
+
+<datalist id="colorsdata">
+    <option>#ff0000</option>
+    <option>#00ff00</option>
+</datalist>
+
+<input type="color" list="colorsdata"/>
+
